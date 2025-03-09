@@ -2,26 +2,16 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Task1" Height="300" Width="400">
-    <Grid ShowGridLines="True">
-        <!--стовпці-->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <StackPanel>
+        <!-- Label -->
+        <Label Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0"/>
 
-        <!--рядкі-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <!-- пишем Label по центру середини-->
-        <Label Grid.Row="0" Grid.Column="1" Content="Label" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <!-- TextBox на весь рядок -->
-        <TextBox Grid.Row="1" Grid.Column="0" Text="TextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <!-- Button у третьому рядку-->
-        <Button Grid.Row="2" Grid.Column="1" Content="Button" Margin="5"/>
-    </Grid>
+        <!-- Три TextBox -->
+        <TextBox Text="TextBox 1" Margin="1"/>
+        <TextBox Text="TextBox 2" Margin="1"/>
+        <TextBox Text="TextBox 3" Margin="1"/>
+        <TextBox Text="TextBox 4" Margin="1"/>
+        <!-- Button -->
+        <Button Content="Button" Margin="10" HorizontalAlignment="Center"/>
+    </StackPanel>
 </Window>
